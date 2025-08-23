@@ -1,0 +1,13 @@
+h1 {
+  /* HEX */
+  color: #ffd700;
+
+  /* rgb*/
+  color: rgb(0, 0, 255);
+
+  /* name of the color. */
+  color: green;
+
+  /* rgb alpha */
+  color: rgba(0, 255, 0, 0.8);
+}

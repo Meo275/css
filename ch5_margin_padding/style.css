@@ -1,0 +1,14 @@
+div {
+    border: solid 2px red;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 5px 30px 10px 30px;
+
+
+}
