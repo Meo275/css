@@ -1,0 +1,12 @@
+h1 {
+    background-color: yellow;
+    display: inline;
+}
+
+
+span {
+    background-color: purple;
+    color: white;
+    display: block;
+    margin: 10px;
+    }

@@ -1,0 +1,39 @@
+/* Basic page layout */
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; font-family: system-ui, sans-serif; background:#f3f4f6; color:#111; }
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Flag container — keeps the correct 2:3 ratio and is responsive */
+.flag {
+  /* width:height = 3:2 (i.e. ratio 3/2) */
+  width: min(90vw, 480px);    /* responsive max width */
+  aspect-ratio: 3 / 2;       /* ensures width:height = 3:2 */
+  display: flex;             /* three vertical stripes side-by-side */
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+/* Each stripe takes an equal share */
+.stripe { flex: 1 1 0; }
+
+/* Official-ish colours for France */
+.blue  { background: #0055A4; }
+.white { background: #ffffff; }
+.red   { background: #EF4135; }
+
+/* small caption styling */
+.caption { font-size: .95rem; color: #444; margin: 0; text-align: center; }
+
+/* accessibility: high-contrast focus ring if the figure is keyboard-focused */
+.flag:focus {
+  outline: 3px solid Highlight;
+  outline-offset: 4px;
+}
+.flag { cursor: default; } /* non-interactive but focusable if needed */

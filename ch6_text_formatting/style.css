@@ -1,0 +1,15 @@
+h1 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-transform:capitalize ;
+    font-size: 50px ;
+    text-shadow: 10px 10px 4px red;
+}
+
+p {
+    text-indent: 50px;
+    /*word-spacing: 10px;
+    letter-spacing: 15px;*/
+    line-height: 4;
+}
